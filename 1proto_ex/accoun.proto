@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+enum EYECOLOR{
+    EYE_COLOR_BLUE = 0;
+    EYE_COLOR_RED = 1;
+    EYE_COLOR_BROWN = 2;
+}
+/* account setting fields
+ nothing to look */
+
+message Account{
+    // account tag start with t
+    // while enum tag start with 0
+    uint32 id = 1;
+    string name = 2;
+    bytes thumbnail = 3;
+    bool is_verfied = 4;
+    float height = 5;
+
+    // repeated means list in layman
+    repeated string phone = 6;
+
+    EYECOLOR eye_color = 7;
+}

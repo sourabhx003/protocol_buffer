@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+enum DayOfWeek{
+    DOW_Undefined = 0;
+    DOW_Sun = 1;
+    DOW_Mon = 2;
+    DOW_Tue = 3;
+    DOW_Wed = 4;
+    DOW_Thu = 5;
+    DOW_Fri = 6;
+    DOW_Sat = 7;
+}
+
+message WeekDay{
+    DayOfWeek DOW = 1;
+}
